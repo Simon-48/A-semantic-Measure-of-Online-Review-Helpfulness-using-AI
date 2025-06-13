@@ -8,21 +8,21 @@ This study used Amazon.com appliance reviews to explore new ways of predicting h
    
 Feature Name:	Description
 
-    Number of Helpfulness Evaluations:	Count of helpfulness votes received by the review
+    1. Number of Helpfulness Evaluations:Count of helpfulness votes received by the review
     
-    Number of Stars:	Star rating given in the review
+    2. Number of Stars:Star rating given in the review
     
-    Number of Words in the Product Description:	Word count of the product description
+    3. Number of Words in the Product Description:Word count of the product description
     
-    Number of Words in the Review:	Word count of the review
+    4. Number of Words in the Review:Word count of the review
     
-    Readability/ARI:	Automated Readability Index score of the review
+    5. Readability/ARI:Automated Readability Index score of the review
     
-    Posting Order:	Order in which the review was posted
+    6. Posting Order:Order in which the review was posted
     
-    Sentiment Score Deviation:	Deviation in sentiment score of the review
+    7. Sentiment Score Deviation:Deviation in sentiment score of the review
     
-    Information Entropy Increment:	Increase in information entropy, indicating novelty or informativeness
+    8. Information Entropy Increment:Increase in information entropy, indicating novelty or informativeness
 
 ### 2. Log Transformation
 
@@ -50,11 +50,11 @@ Step-by-Step Process:
       
       Stratified by the target variable to preserve class distribution
   
-  2. Class Balancing Strategy:
+  2. Class Balancing Strategy on Trainset:
   
       Identify the majority class (Zero Inputs)
       
-      Separate the minority classes and group them to ensure each group has ≥ 300 samples
+      Separate the minority classes and group them through clustering, and ensure each group has ≥ 300 samples for effective training
       
       Use CTGAN (Conditional Tabular GAN) to generate synthetic samples for each group
       
