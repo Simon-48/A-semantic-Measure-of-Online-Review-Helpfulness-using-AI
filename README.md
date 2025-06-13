@@ -85,7 +85,7 @@ Step-by-Step Process:
 ### 4. Regression Modeling
     Multiple regression algorithms were applied to predict the helpfulness score:
     
-    Model Name	Notes
+    Model Name:	Notes
     
     RandomForestRegressor:	Ensemble of decision trees using bagging
     
